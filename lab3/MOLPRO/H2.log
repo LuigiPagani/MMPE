@@ -1,0 +1,1244 @@
+
+ Running default procedure: RKS-SCF000
+1PROGRAM * ALASKA (Gradient of the energy)     Author: R. Lindh
+
+ Orbitals from record         2100.2
+
+ Number of closed-shell orbitals:  1 (  1 )
+ Number of occupied orbitals:      1 (  1 )
+
+ Number of electrons=  2     Singlet     Space symmetry=1      Wavefunction type: CLOSED          
+
+
+ DFT GRADIENT, EXFAC=     0.200
+
+ RKS GRADIENT FOR STATE 1.1
+
+ Atom          dE/dx               dE/dy               dE/dz
+
+   1         0.000000000         0.000000000        -0.004830945
+   2        -0.000000000        -0.000000000         0.004830945
+
+ Nuclear force contribution to virial =         0.006846872
+ Reading points  1 to  1 from record 700.2,  wavefunction type=RKS-SCF000      
+
+ Making model hessian for Z-matrix coordinates
+ No hessian update for point  1
+
+ Quadratic Steepest Descent - Minimum Search
+
+ Optimization point 1
+
+ Variable                      Last           Current        Next           Gradient       Hessian
+
+ E(RKS-SCF000) / Hartree     0.00000000    -1.17174158     0.00000000
+ D1 / ANGSTROM               0.00000000     0.75000000     0.74315621     0.00912916     1.33393358
+ Convergence:                0.00000000  (line search)     0.01293289     0.00483095  (total)
+
+ Geometry written to block  2 of record 700
+
+
+ Recomputing integrals since geometry changed
+
+1PROGRAM * SEWARD (Integral evaluation for generally contracted gaussian basis sets)     Author: Roland Lindh, 1990
+
+ Geometry written to block  2 of record 700
+
+ Orientation using atomic masses  
+ Molecule type: Linear
+ Rotational constants:    1815.7342285   1815.7342285      0.0000000 GHz  (calculated with average atomic masses)
+
+ Point group  C1  
+
+
+
+ ATOMIC COORDINATES
+
+ NR  ATOM    CHARGE       X              Y              Z
+
+   1  H1      1.00    0.000000000    0.000000000   -0.702180853
+   2  H2      1.00    0.000000000    0.000000000    0.702180853
+
+ Bond lengths in Bohr (Angstrom)
+
+ 1-2  1.404361707
+     ( 0.743156208)
+
+ NUCLEAR CHARGE:                    2
+ NUMBER OF PRIMITIVE AOS:          14
+ NUMBER OF SYMMETRY AOS:           14
+ NUMBER OF CONTRACTIONS:           10   (  10A   )
+ NUMBER OF CORE ORBITALS:           0   (   0A   )
+ NUMBER OF VALENCE ORBITALS:        2   (   2A   )
+
+
+ NUCLEAR REPULSION ENERGY    0.71206727
+
+ EXTRA SYMMETRY OF AOS IN SYMMETRY 1:   1 1 2 3 1 1 1 2 3 1
+
+ Eigenvalues of metric
+
+         1 0.969E-01 0.107E+00 0.398E+00 0.662E+00 0.662E+00 0.110E+01 0.134E+01 0.134E+01
+
+
+ Contracted 2-electron integrals neglected if value below      1.0D-11
+ AO integral compression algorithm  1   Integral accuracy      1.0D-11
+
+     0.262 MB (compressed) written to integral file ( 83.6%)
+
+
+ NUMBER OF SORTED TWO-ELECTRON INTEGRALS:       1540.     BUFFER LENGTH:  32768
+ NUMBER OF SEGMENTS:   1  SEGMENT LENGTH:       1540      RECORD LENGTH: 524288
+
+ Memory used in sort:       0.56 MW
+
+ SORT1 READ        2389. AND WROTE         512. INTEGRALS IN      1 RECORDS. CPU TIME:     0.00 SEC, REAL TIME:     0.00 SEC
+ SORT2 READ         512. AND WROTE        1540. INTEGRALS IN      1 RECORDS. CPU TIME:     0.00 SEC, REAL TIME:     0.00 SEC
+
+ FILE SIZES:   FILE 1:     2.8 MBYTE,  FILE 4:     4.2 MBYTE,   TOTAL:      7.0 MBYTE
+
+ OPERATOR DM      FOR CENTER  0  COORDINATES:    0.000000    0.000000    0.000000
+ Density functional group B3LYP=B88+DIRAC+LYP+VWN5
+ Functional: B88(Automatically generated B88)                                  Gradient terms: 1
+ Functional: DIRAC(Automatically generated DIRAC)                              Gradient terms: 0
+ Functional: LYP(Lee-Yang-Parr gradient-corrected correlation energy (1988))   Gradient terms: 1
+ Functional: VWN5(Automatically generated VWN5)                                Gradient terms: 0
+ Use grid at  1800.2
+
+
+ Exact exchange will be calculated, factor:  0.2000
+
+ Functional: B88                       Factor:  0.7200
+ Functional: DIRAC                     Factor:  0.0800
+ Functional: LYP                       Factor:  0.8100
+ Functional: VWN5                      Factor:  0.1900
+
+ Generated new metagrid on record  1800.2 with target accuracy 1.0D-06 and 4200 points in CPU time    0.0
+ Computed new grid on record 1800.1 in CPU time    0.0
+   11654 words reserved for DFT integration
+
+ PROGRAM * RKS-SCF (Restricted closed shell Kohn-Sham)     Authors: W. Meyer, H.-J. Werner, P.J. Knowles, 1993
+
+ NUMBER OF ELECTRONS:       1+    1-    SPACE SYMMETRY=1    SPIN SYMMETRY: Singlet 
+ CONVERGENCE THRESHOLDS:    1.00E-05 (Density)    1.00E-07 (Energy)
+ MAX. NUMBER OF ITERATIONS:       60
+ INTERPOLATION TYPE:            DIIS
+ INTERPOLATION STEPS:              2 (START)      1 (STEP)
+ LEVEL SHIFTS:                  0.00 (CLOSED)  0.00 (OPEN) 
+
+ Number of closed-shell orbitals:    1 (   1 )
+
+
+ Use fine grid record 1800.2 for energy threshold 1.0D-06
+ Molecular orbitals read from record     2100.2  Type=RKS/CANONICAL (state 1.1)
+
+ Molecular orbital dump at record        2100.2
+
+ ITERATION    DDIFF          GRAD             ENERGY        2-EL.EN.            DIPOLE MOMENTS         DIIS
+    1      0.000D+00      0.000D+00        -1.17176711      2.368509    0.00000   -0.00000   -0.00000    0
+    2      0.000D+00      0.513D-03        -1.17177298      2.373227    0.00000   -0.00000   -0.00000    1
+    3      0.533D-03      0.103D-03        -1.17177320      2.372483    0.00000   -0.00000    0.00000    2
+    4      0.752D-04      0.175D-05        -1.17177320      2.372488    0.00000   -0.00000   -0.00000    3
+    5      0.969D-06      0.235D-09        -1.17177320      2.372488   -0.00000   -0.00000    0.00000    0
+
+ Final occupancy:   1
+
+ !RKS STATE 1.1 Energy                 -1.171773196823
+ Nuclear energy                         0.71206727
+ One-electron energy                   -2.50211971
+ Two-electron energy                    1.18624376
+ SCF exchange energy                   -0.65902431     Factor=0.2000
+ Density functional                    -0.56796452     B88=-0.65756864 DIRAC=-0.56813891 LYP=-0.03831296 VWN5=-0.09489730
+ Virial quotient                       -1.02622078
+ !RKS STATE 1.1 Dipole moment          -0.00000000    -0.00000000     0.00000000
+ Dipole moment /Debye                  -0.00000000    -0.00000000     0.00000000
+
+ Orbital energies:
+
+         1.1          2.1          3.1
+     -0.428073     0.103993     0.580333
+
+
+ **********************************************************************************************************************************
+ DATASETS  * FILE   NREC   LENGTH (MB)   RECORD NAMES
+              1      20        2.68       500      610      700      900      950      970     1000      129      960     1100   
+                                          VAR    BASINP    GEOM    SYMINP    ZMAT    AOBASIS   BASIS     P2S    ABASIS      S 
+                                         1400     1410     1200     1210     1080     1600     1650     1300     1700     1800   
+                                           T        V       H0       H01     AOSYM     SMH    MOLCAS    ERIS     OPER     GRID   
+
+              2       4        0.26       700     1000     1800     2100   
+                                         GEOM     BASIS    GRID      RKS  
+
+ PROGRAMS   *        TOTAL       RKS       RKS       INT
+ CPU TIMES  *         1.55      0.19      0.34      0.19
+ REAL TIME  *         2.57 SEC
+ DISK USED  *         7.51 MB      
+ **********************************************************************************************************************************
+
+ PROGRESS OF GEOMETRY OPTIMIZATION.    TOTAL CPU:         0.3 SEC
+
+ ITER.   ENERGY(OLD)    ENERGY(NEW)      DE          GRADMAX     GRADNORM    GRADRMS     STEPMAX     STEPLEN     STEPRMS
+   1    -1.17174158    -1.17177320    -0.00003162  0.00483095  0.00483095  0.00483095  0.01293289  0.01293289  0.01293289
+
+ **********************************************************************************************************************************
+
+ Current geometry (xyz format, in Angstrom)
+
+    2
+ RKS-SCF000/6-31+G(D,P)  ENERGY=-1.17177320
+ H          0.0000000000        0.0000000000       -0.3715781042
+ H          0.0000000000        0.0000000000        0.3715781042
+
+ **********************************************************************************************************************************
+1PROGRAM * ALASKA (Gradient of the energy)     Author: R. Lindh
+
+ Orbitals from record         2100.2
+
+ Number of closed-shell orbitals:  1 (  1 )
+ Number of occupied orbitals:      1 (  1 )
+
+ Number of electrons=  2     Singlet     Space symmetry=1      Wavefunction type: CLOSED          
+
+
+ DFT GRADIENT, EXFAC=     0.200
+
+ RKS GRADIENT FOR STATE 1.1
+
+ Atom          dE/dx               dE/dy               dE/dz
+
+   1         0.000000000         0.000000000        -0.000023930
+   2        -0.000000000        -0.000000000         0.000023930
+
+ Nuclear force contribution to virial =         0.000033607
+ Reading points  1 to  2 from record 700.2,  wavefunction type=RKS-SCF000      
+
+ Making model hessian for Z-matrix coordinates
+ BFGS update of hessian using  1 points
+
+ Quadratic Steepest Descent - Minimum Search
+
+ Optimization point 2
+
+ Variable                      Last           Current        Next           Gradient       Hessian
+
+ E(RKS-SCF000) / Hartree    -1.17174158    -1.17177320     0.00000000
+ D1 / ANGSTROM               0.75000000     0.74315621     0.74312214     0.00004522     1.32732583
+ Convergence:                0.00000000  (line search)     0.00006438     0.00002393  (total)
+
+ Geometry written to block  3 of record 700
+
+
+ Recomputing integrals since geometry changed
+
+1PROGRAM * SEWARD (Integral evaluation for generally contracted gaussian basis sets)     Author: Roland Lindh, 1990
+
+ Geometry written to block  3 of record 700
+
+ Orientation using atomic masses  
+ Molecule type: Linear
+ Rotational constants:    1815.9007249   1815.9007249      0.0000000 GHz  (calculated with average atomic masses)
+
+ Point group  C1  
+
+
+
+ ATOMIC COORDINATES
+
+ NR  ATOM    CHARGE       X              Y              Z
+
+   1  H1      1.00    0.000000000    0.000000000   -0.702148662
+   2  H2      1.00    0.000000000    0.000000000    0.702148662
+
+ Bond lengths in Bohr (Angstrom)
+
+ 1-2  1.404297324
+     ( 0.743122138)
+
+ NUCLEAR CHARGE:                    2
+ NUMBER OF PRIMITIVE AOS:          14
+ NUMBER OF SYMMETRY AOS:           14
+ NUMBER OF CONTRACTIONS:           10   (  10A   )
+ NUMBER OF CORE ORBITALS:           0   (   0A   )
+ NUMBER OF VALENCE ORBITALS:        2   (   2A   )
+
+
+ NUCLEAR REPULSION ENERGY    0.71209991
+
+ EXTRA SYMMETRY OF AOS IN SYMMETRY 1:   1 1 2 3 1 1 1 2 3 1
+
+ Eigenvalues of metric
+
+         1 0.969E-01 0.107E+00 0.398E+00 0.662E+00 0.662E+00 0.110E+01 0.134E+01 0.134E+01
+
+
+ Contracted 2-electron integrals neglected if value below      1.0D-11
+ AO integral compression algorithm  1   Integral accuracy      1.0D-11
+
+     0.262 MB (compressed) written to integral file ( 83.6%)
+
+
+ NUMBER OF SORTED TWO-ELECTRON INTEGRALS:       1540.     BUFFER LENGTH:  32768
+ NUMBER OF SEGMENTS:   1  SEGMENT LENGTH:       1540      RECORD LENGTH: 524288
+
+ Memory used in sort:       0.56 MW
+
+ SORT1 READ        2389. AND WROTE         512. INTEGRALS IN      1 RECORDS. CPU TIME:     0.00 SEC, REAL TIME:     0.01 SEC
+ SORT2 READ         512. AND WROTE        1540. INTEGRALS IN      1 RECORDS. CPU TIME:     0.01 SEC, REAL TIME:     0.00 SEC
+
+ FILE SIZES:   FILE 1:     2.8 MBYTE,  FILE 4:     4.2 MBYTE,   TOTAL:      7.0 MBYTE
+
+ OPERATOR DM      FOR CENTER  0  COORDINATES:    0.000000    0.000000    0.000000
+ Density functional group B3LYP=B88+DIRAC+LYP+VWN5
+ Functional: B88(Automatically generated B88)                                  Gradient terms: 1
+ Functional: DIRAC(Automatically generated DIRAC)                              Gradient terms: 0
+ Functional: LYP(Lee-Yang-Parr gradient-corrected correlation energy (1988))   Gradient terms: 1
+ Functional: VWN5(Automatically generated VWN5)                                Gradient terms: 0
+ Use grid at  1800.2
+
+
+ Exact exchange will be calculated, factor:  0.2000
+
+ Functional: B88                       Factor:  0.7200
+ Functional: DIRAC                     Factor:  0.0800
+ Functional: LYP                       Factor:  0.8100
+ Functional: VWN5                      Factor:  0.1900
+
+ Generated new metagrid on record  1800.2 with target accuracy 1.0D-06 and 4200 points in CPU time    0.0
+ Computed new grid on record 1800.1 in CPU time    0.0
+   11654 words reserved for DFT integration
+
+ PROGRAM * RKS-SCF (Restricted closed shell Kohn-Sham)     Authors: W. Meyer, H.-J. Werner, P.J. Knowles, 1993
+
+ NUMBER OF ELECTRONS:       1+    1-    SPACE SYMMETRY=1    SPIN SYMMETRY: Singlet 
+ CONVERGENCE THRESHOLDS:    1.00E-05 (Density)    1.00E-07 (Energy)
+ MAX. NUMBER OF ITERATIONS:       60
+ INTERPOLATION TYPE:            DIIS
+ INTERPOLATION STEPS:              2 (START)      1 (STEP)
+ LEVEL SHIFTS:                  0.00 (CLOSED)  0.00 (OPEN) 
+
+ Number of closed-shell orbitals:    1 (   1 )
+
+
+ Use fine grid record 1800.2 for energy threshold 1.0D-06
+ Molecular orbitals read from record     2100.2  Type=RKS/CANONICAL (state 1.1)
+
+ Molecular orbital dump at record        2100.2
+
+ ITERATION    DDIFF          GRAD             ENERGY        2-EL.EN.            DIPOLE MOMENTS         DIIS
+    1      0.000D+00      0.000D+00        -1.17177320      2.372510   -0.00000   -0.00000    0.00000    0
+    2      0.000D+00      0.951D-05        -1.17177320      2.372533    0.00000   -0.00000    0.00000    0
+
+ Final occupancy:   1
+
+ !RKS STATE 1.1 Energy                 -1.171773197572
+ Nuclear energy                         0.71209991
+ One-electron energy                   -2.50216563
+ Two-electron energy                    1.18626668
+ SCF exchange energy                   -0.65903705     Factor=0.2000
+ Density functional                    -0.56797416     B88=-0.65758036 DIRAC=-0.56814932 LYP=-0.03831325 VWN5=-0.09489802
+ Virial quotient                       -1.02618952
+ !RKS STATE 1.1 Dipole moment           0.00000000    -0.00000000     0.00000000
+ Dipole moment /Debye                   0.00000000    -0.00000000     0.00000000
+
+ Orbital energies:
+
+         1.1          2.1          3.1
+     -0.428079     0.104003     0.580321
+
+
+ **********************************************************************************************************************************
+ DATASETS  * FILE   NREC   LENGTH (MB)   RECORD NAMES
+              1      20        2.68       500      610      700      900      950      970     1000      129      960     1100   
+                                          VAR    BASINP    GEOM    SYMINP    ZMAT    AOBASIS   BASIS     P2S    ABASIS      S 
+                                         1400     1410     1200     1210     1080     1600     1650     1300     1700     1800   
+                                           T        V       H0       H01     AOSYM     SMH    MOLCAS    ERIS     OPER     GRID   
+
+              2       4        0.26       700     1000     1800     2100   
+                                         GEOM     BASIS    GRID      RKS  
+
+ PROGRAMS   *        TOTAL       RKS       RKS       INT
+ CPU TIMES  *         1.81      0.16      0.34      0.19
+ REAL TIME  *         2.88 SEC
+ DISK USED  *         7.51 MB      
+ **********************************************************************************************************************************
+
+ PROGRESS OF GEOMETRY OPTIMIZATION.    TOTAL CPU:         0.6 SEC
+
+ ITER.   ENERGY(OLD)    ENERGY(NEW)      DE          GRADMAX     GRADNORM    GRADRMS     STEPMAX     STEPLEN     STEPRMS
+   1    -1.17174158    -1.17177320    -0.00003162  0.00483095  0.00483095  0.00483095  0.01293289  0.01293289  0.01293289
+   2    -1.17177320    -1.17177320    -0.00000000  0.00002393  0.00002393  0.00002393  0.00006438  0.00006438  0.00006438
+
+ **********************************************************************************************************************************
+
+ Current geometry (xyz format, in Angstrom)
+
+    2
+ RKS-SCF000/6-31+G(D,P)  ENERGY=-1.17177320
+ H          0.0000000000        0.0000000000       -0.3715610692
+ H          0.0000000000        0.0000000000        0.3715610692
+
+ **********************************************************************************************************************************
+ Cartesian Coordinates are in [bohr]
+ Creating new Variables:
+ H1X1              0.00000000
+ H1Y1              0.00000000
+ H1Z1             -0.70214866
+ H2X2              0.00000000
+ H2Y2              0.00000000
+ H2Z2              0.70214866
+
+ Density functional group B3LYP=B88+DIRAC+LYP+VWN5
+ Functional: B88(Automatically generated B88)                                  Gradient terms: 1
+ Functional: DIRAC(Automatically generated DIRAC)                              Gradient terms: 0
+ Functional: LYP(Lee-Yang-Parr gradient-corrected correlation energy (1988))   Gradient terms: 1
+ Functional: VWN5(Automatically generated VWN5)                                Gradient terms: 0
+ Use grid at  1800.2
+
+
+ Exact exchange will be calculated, factor:  0.2000
+
+ Functional: B88                       Factor:  0.7200
+ Functional: DIRAC                     Factor:  0.0800
+ Functional: LYP                       Factor:  0.8100
+ Functional: VWN5                      Factor:  0.1900
+
+ Generated new metagrid on record  1800.2 with target accuracy 1.0D-06 and 4200 points in CPU time    0.0
+ Computed new grid on record 1800.1 in CPU time    0.1
+   11654 words reserved for DFT integration
+
+ PROGRAM * RKS-SCF (Restricted closed shell Kohn-Sham)     Authors: W. Meyer, H.-J. Werner, P.J. Knowles, 1993
+
+ NUMBER OF ELECTRONS:       1+    1-    SPACE SYMMETRY=1    SPIN SYMMETRY: Singlet 
+ CONVERGENCE THRESHOLDS:    1.00E-05 (Density)    1.00E-06 (Energy)
+ MAX. NUMBER OF ITERATIONS:       60
+ INTERPOLATION TYPE:            DIIS
+ INTERPOLATION STEPS:              2 (START)      1 (STEP)
+ LEVEL SHIFTS:                  0.00 (CLOSED)  0.00 (OPEN) 
+
+
+
+ Use fine grid record 1800.2 for energy threshold 1.0D-06
+ Molecular orbitals read from record     2100.2  Type=RKS/CANONICAL (state 1.1)
+
+ Molecular orbital dump at record        2100.2
+
+ ITERATION    DDIFF          GRAD             ENERGY        2-EL.EN.            DIPOLE MOMENTS         DIIS
+    1      0.000D+00      0.000D+00        -1.17177320      2.372533    0.00000   -0.00000    0.00000    0
+    2      0.000D+00      0.192D-05        -1.17177320      2.372529   -0.00000    0.00000    0.00000    0
+
+ Final occupancy:   1
+
+ !RKS STATE 1.1 Energy                 -1.171773197577
+ Nuclear energy                         0.71209991
+ One-electron energy                   -2.50216443
+ Two-electron energy                    1.18626447
+ SCF exchange energy                   -0.65903582     Factor=0.2000
+ Density functional                    -0.56797315     B88=-0.65757911 DIRAC=-0.56814825 LYP=-0.03831323 VWN5=-0.09489795
+ Virial quotient                       -1.02619345
+ !RKS STATE 1.1 Dipole moment          -0.00000000     0.00000000     0.00000000
+ Dipole moment /Debye                  -0.00000000     0.00000000     0.00000000
+
+ Orbital energies:
+
+         1.1          2.1          3.1
+     -0.428080     0.104002     0.580320
+
+
+ **********************************************************************************************************************************
+ DATASETS  * FILE   NREC   LENGTH (MB)   RECORD NAMES
+              1      21        2.69       500      610      700      900      950      970     1000      129      960     1100   
+                                          VAR    BASINP    GEOM    SYMINP    ZMAT    AOBASIS   BASIS     P2S    ABASIS      S 
+                                         1400     1410     1200     1210     1080     1600     1650     1300     1700     1800   
+                                           T        V       H0       H01     AOSYM     SMH    MOLCAS    ERIS     OPER     GRID   
+                                          701   
+                                         GEOM   
+
+              2       5        0.27       700     1000     1800     2100      701   
+                                         GEOM     BASIS    GRID      RKS     GEOM   
+
+ PROGRAMS   *        TOTAL       RKS      OPTG       RKS       INT
+ CPU TIMES  *         1.95      0.13      0.55      0.34      0.19
+ REAL TIME  *         3.04 SEC
+ DISK USED  *         7.51 MB      
+ **********************************************************************************************************************************
+
+ Freezing grid
+ Task   1   Incrementing variable H1X1  by   0.010 BOH (Skipping negative increment due to symmetry).
+ Task   2   Incrementing variable H1Y1  by   0.010 BOH (Skipping negative increment due to symmetry).
+ Task   3   Incrementing variable H1Z1  by   0.010 BOH
+ Task   4   Incrementing variable H1Z1  by  -0.010 BOH
+ Starting task   1.  CPU=     0.00 sec, Elapsed=     0.00 sec
+ Incrementing variable H1X1             by  0.010000 BOH   to    0.010000 BOH
+
+
+ Recomputing integrals since geometry changed
+
+1PROGRAM * SEWARD (Integral evaluation for generally contracted gaussian basis sets)     Author: Roland Lindh, 1990
+
+ Geometry written to block  1 of record 701
+
+
+ Point group  C1  
+
+
+
+ ATOMIC COORDINATES
+
+ NR  ATOM    CHARGE       X              Y              Z
+
+   1  H1      1.00    0.010000000    0.000000000   -0.702148662
+   2  H2      1.00    0.000000000    0.000000000    0.702148662
+
+ Bond lengths in Bohr (Angstrom)
+
+ 1-2  1.404332928
+     ( 0.743140980)
+
+ NUCLEAR CHARGE:                    2
+ NUMBER OF PRIMITIVE AOS:          14
+ NUMBER OF SYMMETRY AOS:           14
+ NUMBER OF CONTRACTIONS:           10   (  10A   )
+ NUMBER OF CORE ORBITALS:           0   (   0A   )
+ NUMBER OF VALENCE ORBITALS:        2   (   2A   )
+
+
+ NUCLEAR REPULSION ENERGY    0.71208186
+
+ EXTRA SYMMETRY OF AOS IN SYMMETRY 1:   1 1 1 2 1 1 1 1 2 1
+
+ Eigenvalues of metric
+
+         1 0.969E-01 0.107E+00 0.398E+00 0.662E+00 0.662E+00 0.110E+01 0.134E+01 0.134E+01
+
+
+ Contracted 2-electron integrals neglected if value below      1.0D-11
+ AO integral compression algorithm  1   Integral accuracy      1.0D-11
+
+     0.262 MB (compressed) written to integral file (100.0%)
+
+
+ NUMBER OF SORTED TWO-ELECTRON INTEGRALS:       1540.     BUFFER LENGTH:  32768
+ NUMBER OF SEGMENTS:   1  SEGMENT LENGTH:       1540      RECORD LENGTH: 524288
+
+ Memory used in sort:       0.56 MW
+
+ SORT1 READ        2389. AND WROTE         830. INTEGRALS IN      1 RECORDS. CPU TIME:     0.00 SEC, REAL TIME:     0.01 SEC
+ SORT2 READ         830. AND WROTE        1540. INTEGRALS IN      1 RECORDS. CPU TIME:     0.00 SEC, REAL TIME:     0.00 SEC
+
+ FILE SIZES:   FILE 1:     3.0 MBYTE,  FILE 4:     4.2 MBYTE,   TOTAL:      7.2 MBYTE
+
+ OPERATOR DM      FOR CENTER  0  COORDINATES:    0.000000    0.000000    0.000000
+ Density functional group B3LYP=B88+DIRAC+LYP+VWN5
+ Functional: B88(Automatically generated B88)                                  Gradient terms: 1
+ Functional: DIRAC(Automatically generated DIRAC)                              Gradient terms: 0
+ Functional: LYP(Lee-Yang-Parr gradient-corrected correlation energy (1988))   Gradient terms: 1
+ Functional: VWN5(Automatically generated VWN5)                                Gradient terms: 0
+ Use grid at  1800.2
+
+
+ Exact exchange will be calculated, factor:  0.2000
+
+ Functional: B88                       Factor:  0.7200
+ Functional: DIRAC                     Factor:  0.0800
+ Functional: LYP                       Factor:  0.8100
+ Functional: VWN5                      Factor:  0.1900
+
+ Computed new grid on record 1800.1 in CPU time    0.0
+   11654 words reserved for DFT integration
+
+ PROGRAM * RKS-SCF (Restricted closed shell Kohn-Sham)     Authors: W. Meyer, H.-J. Werner, P.J. Knowles, 1993
+
+ NUMBER OF ELECTRONS:       1+    1-    SPACE SYMMETRY=1    SPIN SYMMETRY: Singlet 
+ CONVERGENCE THRESHOLDS:    1.00E-07 (Density)    1.00E-07 (Energy)
+ MAX. NUMBER OF ITERATIONS:       60
+ INTERPOLATION TYPE:            DIIS
+ INTERPOLATION STEPS:              2 (START)      1 (STEP)
+ LEVEL SHIFTS:                  0.00 (CLOSED)  0.00 (OPEN) 
+
+ Number of closed-shell orbitals:    1 (   1 )
+
+
+ Use fine grid record 1800.2 for energy threshold 1.0D-06
+ Molecular orbitals read from record     2100.2  Type=RKS/CANONICAL (state 1.1)
+
+ Molecular orbital dump at record        2100.1
+
+ ITERATION    DDIFF          GRAD             ENERGY        2-EL.EN.            DIPOLE MOMENTS         DIIS
+    1      0.000D+00      0.000D+00        -1.17177310      2.372516    0.00000    0.00000    0.00000    0
+    2      0.000D+00      0.977D-04        -1.17177319      2.372505    0.00000    0.00000   -0.00000    1
+    3      0.236D-04      0.547D-05        -1.17177319      2.372507    0.00000   -0.00000    0.00000    2
+    4      0.141D-05      0.610D-07        -1.17177319      2.372506    0.00000    0.00000    0.00000    3
+    5      0.463D-07      0.150D-09        -1.17177319      2.372506    0.00000    0.00000    0.00000    0
+
+ Final occupancy:   1
+
+ !RKS STATE 1.1 Energy                 -1.171773192547
+ Nuclear energy                         0.71208186
+ One-electron energy                   -2.50213978
+ Two-electron energy                    1.18625317
+ SCF exchange energy                   -0.65902954     Factor=0.2000
+ Density functional                    -0.56796844     B88=-0.65757340 DIRAC=-0.56814315 LYP=-0.03831308 VWN5=-0.09489759
+ Virial quotient                       -1.02620828
+ !RKS STATE 1.1 Dipole moment           0.00000000     0.00000000     0.00000000
+ Dipole moment /Debye                   0.00000000     0.00000000     0.00000000
+
+ Orbital energies:
+
+         1.1          2.1          3.1
+     -0.428076     0.103997     0.580327
+
+
+ **********************************************************************************************************************************
+ DATASETS  * FILE   NREC   LENGTH (MB)   RECORD NAMES
+              1      22        2.91       500      610      700      900      701      950      970     1000      129      960   
+                                          VAR    BASINP    GEOM    SYMINP    GEOM     ZMAT    AOBASIS   BASIS     P2S    ABASIS    
+                                         1100     1400     1410     1200     1210     1080     1600     1650     1300     1700   
+                                           S        T        V       H0       H01     AOSYM     SMH    MOLCAS    ERIS     OPER   
+                                         1800     2100   
+                                         GRID      RKS  
+
+              2       6        0.47       700     1000     1800     2100      701     5500   
+                                         GEOM     BASIS    GRID      RKS     GEOM     HINFO   
+
+ PROGRAMS   *        TOTAL       RKS      OPTG       RKS       INT
+ CPU TIMES  *         2.04      0.07      0.55      0.34      0.19
+ REAL TIME  *         3.20 SEC
+ DISK USED  *         7.93 MB      
+ **********************************************************************************************************************************
+1PROGRAM * ALASKA (Gradient of the energy)     Author: R. Lindh
+
+ Orbitals from record         2100.1
+
+ Number of closed-shell orbitals:  1 (  1 )
+ Number of occupied orbitals:      1 (  1 )
+
+ Number of electrons=  2     Singlet     Space symmetry=1      Wavefunction type: CLOSED          
+
+
+ DFT GRADIENT, EXFAC=     0.200
+
+ RKS GRADIENT FOR STATE 1.1
+
+ Atom          dE/dx               dE/dy               dE/dz
+
+   1         0.000001053        -0.000000000        -0.000013044
+   2        -0.000001053        -0.000000000         0.000013044
+
+ Nuclear force contribution to virial =         0.000018328
+ Starting task   2.  CPU=     0.16 sec, Elapsed=     0.16 sec
+ Incrementing variable H1Y1             by  0.010000 BOH   to    0.010000 BOH
+
+
+ Recomputing integrals since geometry changed
+
+1PROGRAM * SEWARD (Integral evaluation for generally contracted gaussian basis sets)     Author: Roland Lindh, 1990
+
+ Geometry written to block  1 of record 701
+
+
+ Point group  C1  
+
+
+
+ ATOMIC COORDINATES
+
+ NR  ATOM    CHARGE       X              Y              Z
+
+   1  H1      1.00    0.000000000    0.010000000   -0.702148662
+   2  H2      1.00    0.000000000    0.000000000    0.702148662
+
+ Bond lengths in Bohr (Angstrom)
+
+ 1-2  1.404332928
+     ( 0.743140980)
+
+ NUCLEAR CHARGE:                    2
+ NUMBER OF PRIMITIVE AOS:          14
+ NUMBER OF SYMMETRY AOS:           14
+ NUMBER OF CONTRACTIONS:           10   (  10A   )
+ NUMBER OF CORE ORBITALS:           0   (   0A   )
+ NUMBER OF VALENCE ORBITALS:        2   (   2A   )
+
+
+ NUCLEAR REPULSION ENERGY    0.71208186
+
+ EXTRA SYMMETRY OF AOS IN SYMMETRY 1:   1 1 2 1 1 1 1 2 1 1
+
+ Eigenvalues of metric
+
+         1 0.969E-01 0.107E+00 0.398E+00 0.662E+00 0.662E+00 0.110E+01 0.134E+01 0.134E+01
+
+
+ Contracted 2-electron integrals neglected if value below      1.0D-11
+ AO integral compression algorithm  1   Integral accuracy      1.0D-11
+
+     0.262 MB (compressed) written to integral file (100.0%)
+
+
+ NUMBER OF SORTED TWO-ELECTRON INTEGRALS:       1540.     BUFFER LENGTH:  32768
+ NUMBER OF SEGMENTS:   1  SEGMENT LENGTH:       1540      RECORD LENGTH: 524288
+
+ Memory used in sort:       0.56 MW
+
+ SORT1 READ        2389. AND WROTE         830. INTEGRALS IN      1 RECORDS. CPU TIME:     0.00 SEC, REAL TIME:     0.00 SEC
+ SORT2 READ         830. AND WROTE        1540. INTEGRALS IN      1 RECORDS. CPU TIME:     0.00 SEC, REAL TIME:     0.00 SEC
+
+ FILE SIZES:   FILE 1:     3.0 MBYTE,  FILE 4:     4.2 MBYTE,   TOTAL:      7.2 MBYTE
+
+ OPERATOR DM      FOR CENTER  0  COORDINATES:    0.000000    0.000000    0.000000
+ Density functional group B3LYP=B88+DIRAC+LYP+VWN5
+ Functional: B88(Automatically generated B88)                                  Gradient terms: 1
+ Functional: DIRAC(Automatically generated DIRAC)                              Gradient terms: 0
+ Functional: LYP(Lee-Yang-Parr gradient-corrected correlation energy (1988))   Gradient terms: 1
+ Functional: VWN5(Automatically generated VWN5)                                Gradient terms: 0
+ Use grid at  1800.2
+
+
+ Exact exchange will be calculated, factor:  0.2000
+
+ Functional: B88                       Factor:  0.7200
+ Functional: DIRAC                     Factor:  0.0800
+ Functional: LYP                       Factor:  0.8100
+ Functional: VWN5                      Factor:  0.1900
+
+ Computed new grid on record 1800.1 in CPU time    0.0
+   11654 words reserved for DFT integration
+
+ PROGRAM * RKS-SCF (Restricted closed shell Kohn-Sham)     Authors: W. Meyer, H.-J. Werner, P.J. Knowles, 1993
+
+ NUMBER OF ELECTRONS:       1+    1-    SPACE SYMMETRY=1    SPIN SYMMETRY: Singlet 
+ CONVERGENCE THRESHOLDS:    1.00E-07 (Density)    1.00E-07 (Energy)
+ MAX. NUMBER OF ITERATIONS:       60
+ INTERPOLATION TYPE:            DIIS
+ INTERPOLATION STEPS:              2 (START)      1 (STEP)
+ LEVEL SHIFTS:                  0.00 (CLOSED)  0.00 (OPEN) 
+
+ Number of closed-shell orbitals:    1 (   1 )
+
+
+ Use fine grid record 1800.2 for energy threshold 1.0D-06
+ Molecular orbitals read from record     2100.2  Type=RKS/CANONICAL (state 1.1)
+
+ Molecular orbital dump at record        2100.1
+
+ ITERATION    DDIFF          GRAD             ENERGY        2-EL.EN.            DIPOLE MOMENTS         DIIS
+    1      0.000D+00      0.000D+00        -1.17177310      2.372516   -0.00000    0.00000    0.00000    0
+    2      0.000D+00      0.977D-04        -1.17177319      2.372505   -0.00000    0.00000    0.00000    1
+    3      0.236D-04      0.547D-05        -1.17177319      2.372507    0.00000    0.00000   -0.00000    2
+    4      0.141D-05      0.610D-07        -1.17177319      2.372506   -0.00000    0.00000   -0.00000    3
+    5      0.463D-07      0.150D-09        -1.17177319      2.372506    0.00000    0.00000   -0.00000    0
+
+ Final occupancy:   1
+
+ !RKS STATE 1.1 Energy                 -1.171773192547
+ Nuclear energy                         0.71208186
+ One-electron energy                   -2.50213978
+ Two-electron energy                    1.18625317
+ SCF exchange energy                   -0.65902954     Factor=0.2000
+ Density functional                    -0.56796844     B88=-0.65757340 DIRAC=-0.56814315 LYP=-0.03831308 VWN5=-0.09489759
+ Virial quotient                       -1.02620828
+ !RKS STATE 1.1 Dipole moment           0.00000000     0.00000000    -0.00000000
+ Dipole moment /Debye                   0.00000000     0.00000000    -0.00000000
+
+ Orbital energies:
+
+         1.1          2.1          3.1
+     -0.428076     0.103997     0.580327
+
+
+ **********************************************************************************************************************************
+ DATASETS  * FILE   NREC   LENGTH (MB)   RECORD NAMES
+              1      22        2.91       500      610      700      900      701      950      970     1000      129      960   
+                                          VAR    BASINP    GEOM    SYMINP    GEOM     ZMAT    AOBASIS   BASIS     P2S    ABASIS    
+                                         1100     1400     1410     1200     1210     1080     1600     1650     1300     1700   
+                                           S        T        V       H0       H01     AOSYM     SMH    MOLCAS    ERIS     OPER   
+                                         1800     2100   
+                                         GRID      RKS  
+
+              2       6        0.47       700     1000     1800     2100      701     5500   
+                                         GEOM     BASIS    GRID      RKS     GEOM     HINFO   
+
+ PROGRAMS   *        TOTAL       RKS      OPTG       RKS       INT
+ CPU TIMES  *         2.31      0.28      0.55      0.34      0.19
+ REAL TIME  *         3.62 SEC
+ DISK USED  *         7.93 MB      
+ **********************************************************************************************************************************
+1PROGRAM * ALASKA (Gradient of the energy)     Author: R. Lindh
+
+ Orbitals from record         2100.1
+
+ Number of closed-shell orbitals:  1 (  1 )
+ Number of occupied orbitals:      1 (  1 )
+
+ Number of electrons=  2     Singlet     Space symmetry=1      Wavefunction type: CLOSED          
+
+
+ DFT GRADIENT, EXFAC=     0.200
+
+ RKS GRADIENT FOR STATE 1.1
+
+ Atom          dE/dx               dE/dy               dE/dz
+
+   1        -0.000000000         0.000001053        -0.000013044
+   2        -0.000000000        -0.000001053         0.000013044
+
+ Nuclear force contribution to virial =         0.000018328
+ Starting task   3.  CPU=     0.67 sec, Elapsed=     0.69 sec
+ Incrementing variable H1Z1             by  0.010000 BOH   to   -0.692149 BOH
+
+
+ Recomputing integrals since geometry changed
+
+1PROGRAM * SEWARD (Integral evaluation for generally contracted gaussian basis sets)     Author: Roland Lindh, 1990
+
+ Geometry written to block  1 of record 701
+
+
+ Point group  C1  
+
+
+
+ ATOMIC COORDINATES
+
+ NR  ATOM    CHARGE       X              Y              Z
+
+   1  H1      1.00    0.000000000    0.000000000   -0.692148662
+   2  H2      1.00    0.000000000    0.000000000    0.702148662
+
+ Bond lengths in Bohr (Angstrom)
+
+ 1-2  1.394297324
+     ( 0.737830366)
+
+ NUCLEAR CHARGE:                    2
+ NUMBER OF PRIMITIVE AOS:          14
+ NUMBER OF SYMMETRY AOS:           14
+ NUMBER OF CONTRACTIONS:           10   (  10A   )
+ NUMBER OF CORE ORBITALS:           0   (   0A   )
+ NUMBER OF VALENCE ORBITALS:        2   (   2A   )
+
+
+ NUCLEAR REPULSION ENERGY    0.71720714
+
+ EXTRA SYMMETRY OF AOS IN SYMMETRY 1:   1 1 2 3 1 1 1 2 3 1
+
+ Eigenvalues of metric
+
+         1 0.957E-01 0.104E+00 0.398E+00 0.657E+00 0.657E+00 0.110E+01 0.134E+01 0.134E+01
+
+
+ Contracted 2-electron integrals neglected if value below      1.0D-11
+ AO integral compression algorithm  1   Integral accuracy      1.0D-11
+
+     0.262 MB (compressed) written to integral file ( 83.6%)
+
+
+ NUMBER OF SORTED TWO-ELECTRON INTEGRALS:       1540.     BUFFER LENGTH:  32768
+ NUMBER OF SEGMENTS:   1  SEGMENT LENGTH:       1540      RECORD LENGTH: 524288
+
+ Memory used in sort:       0.56 MW
+
+ SORT1 READ        2389. AND WROTE         512. INTEGRALS IN      1 RECORDS. CPU TIME:     0.00 SEC, REAL TIME:     0.00 SEC
+ SORT2 READ         512. AND WROTE        1540. INTEGRALS IN      1 RECORDS. CPU TIME:     0.00 SEC, REAL TIME:     0.00 SEC
+
+ FILE SIZES:   FILE 1:     3.0 MBYTE,  FILE 4:     4.2 MBYTE,   TOTAL:      7.2 MBYTE
+
+ OPERATOR DM      FOR CENTER  0  COORDINATES:    0.000000    0.000000    0.000000
+ Density functional group B3LYP=B88+DIRAC+LYP+VWN5
+ Functional: B88(Automatically generated B88)                                  Gradient terms: 1
+ Functional: DIRAC(Automatically generated DIRAC)                              Gradient terms: 0
+ Functional: LYP(Lee-Yang-Parr gradient-corrected correlation energy (1988))   Gradient terms: 1
+ Functional: VWN5(Automatically generated VWN5)                                Gradient terms: 0
+ Use grid at  1800.2
+
+
+ Exact exchange will be calculated, factor:  0.2000
+
+ Functional: B88                       Factor:  0.7200
+ Functional: DIRAC                     Factor:  0.0800
+ Functional: LYP                       Factor:  0.8100
+ Functional: VWN5                      Factor:  0.1900
+
+ Computed new grid on record 1800.1 in CPU time    0.0
+   11654 words reserved for DFT integration
+
+ PROGRAM * RKS-SCF (Restricted closed shell Kohn-Sham)     Authors: W. Meyer, H.-J. Werner, P.J. Knowles, 1993
+
+ NUMBER OF ELECTRONS:       1+    1-    SPACE SYMMETRY=1    SPIN SYMMETRY: Singlet 
+ CONVERGENCE THRESHOLDS:    1.00E-07 (Density)    1.00E-07 (Energy)
+ MAX. NUMBER OF ITERATIONS:       60
+ INTERPOLATION TYPE:            DIIS
+ INTERPOLATION STEPS:              2 (START)      1 (STEP)
+ LEVEL SHIFTS:                  0.00 (CLOSED)  0.00 (OPEN) 
+
+ Number of closed-shell orbitals:    1 (   1 )
+
+
+ Use fine grid record 1800.2 for energy threshold 1.0D-06
+ Molecular orbitals read from record     2100.2  Type=RKS/CANONICAL (state 1.1)
+
+ Molecular orbital dump at record        2100.1
+
+ ITERATION    DDIFF          GRAD             ENERGY        2-EL.EN.            DIPOLE MOMENTS         DIIS
+    1      0.000D+00      0.000D+00        -1.17175027      2.375981   -0.00000    0.00000    0.00000    0
+    2      0.000D+00      0.400D-03        -1.17175385      2.379680    0.00000   -0.00000    0.00000    1
+    3      0.415D-03      0.811D-04        -1.17175398      2.379094    0.00000   -0.00000    0.00000    2
+    4      0.589D-04      0.135D-05        -1.17175398      2.379097   -0.00000   -0.00000    0.00000    3
+    5      0.721D-06      0.116D-09        -1.17175398      2.379097    0.00000    0.00000    0.00000    3
+    6      0.865D-10      0.214D-14        -1.17175398      2.379097    0.00000    0.00000    0.00000    0
+
+ Final occupancy:   1
+
+ !RKS STATE 1.1 Energy                 -1.171753976144
+ Nuclear energy                         0.71720714
+ One-electron energy                   -2.50916460
+ Two-electron energy                    1.18954859
+ SCF exchange energy                   -0.66086033     Factor=0.2000
+ Density functional                    -0.56934511     B88=-0.65924433 DIRAC=-0.56963109 LYP=-0.03835631 VWN5=-0.09500050
+ Virial quotient                       -1.02182300
+ !RKS STATE 1.1 Dipole moment           0.00000000     0.00000000     0.00000000
+ Dipole moment /Debye                   0.00000000     0.00000000     0.00000000
+
+ Orbital energies:
+
+         1.1          2.1          3.1
+     -0.429181     0.105501     0.578390
+
+
+ **********************************************************************************************************************************
+ DATASETS  * FILE   NREC   LENGTH (MB)   RECORD NAMES
+              1      22        2.91       500      610      700      900      701      950      970     1000      129      960   
+                                          VAR    BASINP    GEOM    SYMINP    GEOM     ZMAT    AOBASIS   BASIS     P2S    ABASIS    
+                                         1100     1400     1410     1200     1210     1080     1600     1650     1300     1700   
+                                           S        T        V       H0       H01     AOSYM     SMH    MOLCAS    ERIS     OPER   
+                                         1800     2100   
+                                         GRID      RKS  
+
+              2       6        0.47       700     1000     1800     2100      701     5500   
+                                         GEOM     BASIS    GRID      RKS     GEOM     HINFO   
+
+ PROGRAMS   *        TOTAL       RKS      OPTG       RKS       INT
+ CPU TIMES  *         2.58      0.19      0.55      0.34      0.19
+ REAL TIME  *         3.95 SEC
+ DISK USED  *         7.93 MB      
+ **********************************************************************************************************************************
+1PROGRAM * ALASKA (Gradient of the energy)     Author: R. Lindh
+
+ Orbitals from record         2100.1
+
+ Number of closed-shell orbitals:  1 (  1 )
+ Number of occupied orbitals:      1 (  1 )
+
+ Number of electrons=  2     Singlet     Space symmetry=1      Wavefunction type: CLOSED          
+
+
+ DFT GRADIENT, EXFAC=     0.200
+
+ RKS GRADIENT FOR STATE 1.1
+
+ Atom          dE/dx               dE/dy               dE/dz
+
+   1        -0.000000000        -0.000000000         0.003865591
+   2        -0.000000000        -0.000000000        -0.003865591
+
+ Nuclear force contribution to virial =        -0.005389783
+ Starting task   4.  CPU=     1.07 sec, Elapsed=     1.09 sec
+ Incrementing variable H1Z1             by -0.010000 BOH   to   -0.712149 BOH
+
+
+ Recomputing integrals since geometry changed
+
+1PROGRAM * SEWARD (Integral evaluation for generally contracted gaussian basis sets)     Author: Roland Lindh, 1990
+
+ Geometry written to block  1 of record 701
+
+
+ Point group  C1  
+
+
+
+ ATOMIC COORDINATES
+
+ NR  ATOM    CHARGE       X              Y              Z
+
+   1  H1      1.00    0.000000000    0.000000000   -0.712148662
+   2  H2      1.00    0.000000000    0.000000000    0.702148662
+
+ Bond lengths in Bohr (Angstrom)
+
+ 1-2  1.414297324
+     ( 0.748413911)
+
+ NUCLEAR CHARGE:                    2
+ NUMBER OF PRIMITIVE AOS:          14
+ NUMBER OF SYMMETRY AOS:           14
+ NUMBER OF CONTRACTIONS:           10   (  10A   )
+ NUMBER OF CORE ORBITALS:           0   (   0A   )
+ NUMBER OF VALENCE ORBITALS:        2   (   2A   )
+
+
+ NUCLEAR REPULSION ENERGY    0.70706490
+
+ EXTRA SYMMETRY OF AOS IN SYMMETRY 1:   1 1 2 3 1 1 1 2 3 1
+
+ Eigenvalues of metric
+
+         1 0.980E-01 0.111E+00 0.397E+00 0.667E+00 0.667E+00 0.109E+01 0.133E+01 0.133E+01
+
+
+ Contracted 2-electron integrals neglected if value below      1.0D-11
+ AO integral compression algorithm  1   Integral accuracy      1.0D-11
+
+     0.262 MB (compressed) written to integral file ( 83.6%)
+
+
+ NUMBER OF SORTED TWO-ELECTRON INTEGRALS:       1540.     BUFFER LENGTH:  32768
+ NUMBER OF SEGMENTS:   1  SEGMENT LENGTH:       1540      RECORD LENGTH: 524288
+
+ Memory used in sort:       0.56 MW
+
+ SORT1 READ        2389. AND WROTE         512. INTEGRALS IN      1 RECORDS. CPU TIME:     0.00 SEC, REAL TIME:     0.00 SEC
+ SORT2 READ         512. AND WROTE        1540. INTEGRALS IN      1 RECORDS. CPU TIME:     0.00 SEC, REAL TIME:     0.01 SEC
+
+ FILE SIZES:   FILE 1:     3.0 MBYTE,  FILE 4:     4.2 MBYTE,   TOTAL:      7.2 MBYTE
+
+ OPERATOR DM      FOR CENTER  0  COORDINATES:    0.000000    0.000000    0.000000
+ Density functional group B3LYP=B88+DIRAC+LYP+VWN5
+ Functional: B88(Automatically generated B88)                                  Gradient terms: 1
+ Functional: DIRAC(Automatically generated DIRAC)                              Gradient terms: 0
+ Functional: LYP(Lee-Yang-Parr gradient-corrected correlation energy (1988))   Gradient terms: 1
+ Functional: VWN5(Automatically generated VWN5)                                Gradient terms: 0
+ Use grid at  1800.2
+
+
+ Exact exchange will be calculated, factor:  0.2000
+
+ Functional: B88                       Factor:  0.7200
+ Functional: DIRAC                     Factor:  0.0800
+ Functional: LYP                       Factor:  0.8100
+ Functional: VWN5                      Factor:  0.1900
+
+ Computed new grid on record 1800.1 in CPU time    0.0
+   11654 words reserved for DFT integration
+
+ PROGRAM * RKS-SCF (Restricted closed shell Kohn-Sham)     Authors: W. Meyer, H.-J. Werner, P.J. Knowles, 1993
+
+ NUMBER OF ELECTRONS:       1+    1-    SPACE SYMMETRY=1    SPIN SYMMETRY: Singlet 
+ CONVERGENCE THRESHOLDS:    1.00E-07 (Density)    1.00E-07 (Energy)
+ MAX. NUMBER OF ITERATIONS:       60
+ INTERPOLATION TYPE:            DIIS
+ INTERPOLATION STEPS:              2 (START)      1 (STEP)
+ LEVEL SHIFTS:                  0.00 (CLOSED)  0.00 (OPEN) 
+
+ Number of closed-shell orbitals:    1 (   1 )
+
+
+ Use fine grid record 1800.2 for energy threshold 1.0D-06
+ Molecular orbitals read from record     2100.2  Type=RKS/CANONICAL (state 1.1)
+
+ Molecular orbital dump at record        2100.1
+
+ ITERATION    DDIFF          GRAD             ENERGY        2-EL.EN.            DIPOLE MOMENTS         DIIS
+    1      0.000D+00      0.000D+00        -1.17175078      2.369074   -0.00000    0.00000   -0.00000    0
+    2      0.000D+00      0.396D-03        -1.17175429      2.365441    0.00000    0.00000   -0.00000    1
+    3      0.413D-03      0.795D-04        -1.17175442      2.366011   -0.00000    0.00000   -0.00000    2
+    4      0.579D-04      0.136D-05        -1.17175442      2.366008    0.00000   -0.00000   -0.00000    3
+    5      0.761D-06      0.115D-09        -1.17175442      2.366008    0.00000   -0.00000   -0.00000    3
+    6      0.889D-10      0.223D-14        -1.17175442      2.366008   -0.00000    0.00000   -0.00000    0
+
+ Final occupancy:   1
+
+ !RKS STATE 1.1 Energy                 -1.171754416410
+ Nuclear energy                         0.70706490
+ One-electron energy                   -2.49521100
+ Two-electron energy                    1.18300377
+ SCF exchange energy                   -0.65722432     Factor=0.2000
+ Density functional                    -0.56661208     B88=-0.65592749 DIRAC=-0.56667712 LYP=-0.03827022 VWN5=-0.09479602
+ Virial quotient                       -1.03051537
+ !RKS STATE 1.1 Dipole moment          -0.00000000     0.00000000    -0.00000000
+ Dipole moment /Debye                  -0.00000000     0.00000000    -0.00000000
+
+ Orbital energies:
+
+         1.1          2.1          3.1
+     -0.426986     0.102502     0.582250
+
+
+ **********************************************************************************************************************************
+ DATASETS  * FILE   NREC   LENGTH (MB)   RECORD NAMES
+              1      22        2.91       500      610      700      900      701      950      970     1000      129      960   
+                                          VAR    BASINP    GEOM    SYMINP    GEOM     ZMAT    AOBASIS   BASIS     P2S    ABASIS    
+                                         1100     1400     1410     1200     1210     1080     1600     1650     1300     1700   
+                                           S        T        V       H0       H01     AOSYM     SMH    MOLCAS    ERIS     OPER   
+                                         1800     2100   
+                                         GRID      RKS  
+
+              2       6        0.47       700     1000     1800     2100      701     5500   
+                                         GEOM     BASIS    GRID      RKS     GEOM     HINFO   
+
+ PROGRAMS   *        TOTAL       RKS      OPTG       RKS       INT
+ CPU TIMES  *         2.96      0.21      0.55      0.34      0.19
+ REAL TIME  *         4.37 SEC
+ DISK USED  *         7.93 MB      
+ **********************************************************************************************************************************
+1PROGRAM * ALASKA (Gradient of the energy)     Author: R. Lindh
+
+ Orbitals from record         2100.1
+
+ Number of closed-shell orbitals:  1 (  1 )
+ Number of occupied orbitals:      1 (  1 )
+
+ Number of electrons=  2     Singlet     Space symmetry=1      Wavefunction type: CLOSED          
+
+
+ DFT GRADIENT, EXFAC=     0.200
+
+ RKS GRADIENT FOR STATE 1.1
+
+ Atom          dE/dx               dE/dy               dE/dz
+
+   1        -0.000000000        -0.000000000        -0.003735631
+   2        -0.000000000        -0.000000000         0.003735631
+
+ Nuclear force contribution to virial =         0.005283293
+
+ Numerical RKS-SCF000 hessian completed. CPU-time:     1.43 sec, Elapsed:     1.45 sec
+
+ Reset grid_freeze to  0.0
+
+ Recomputing wavefunction at initial geometry
+
+
+ Recomputing integrals since geometry changed
+
+1PROGRAM * SEWARD (Integral evaluation for generally contracted gaussian basis sets)     Author: Roland Lindh, 1990
+
+ Geometry written to block  1 of record 700
+
+ Orientation using atomic masses  
+ Molecule type: Linear
+ Rotational constants:    1815.9007249   1815.9007249      0.0000000 GHz  (calculated with average atomic masses)
+
+ Point group  C1  
+
+
+
+ ATOMIC COORDINATES
+
+ NR  ATOM    CHARGE       X              Y              Z
+
+   1  H1      1.00    0.000000000    0.000000000   -0.702148662
+   2  H2      1.00    0.000000000    0.000000000    0.702148662
+
+ Bond lengths in Bohr (Angstrom)
+
+ 1-2  1.404297324
+     ( 0.743122138)
+
+ NUCLEAR CHARGE:                    2
+ NUMBER OF PRIMITIVE AOS:          14
+ NUMBER OF SYMMETRY AOS:           14
+ NUMBER OF CONTRACTIONS:           10   (  10A   )
+ NUMBER OF CORE ORBITALS:           0   (   0A   )
+ NUMBER OF VALENCE ORBITALS:        2   (   2A   )
+
+
+ NUCLEAR REPULSION ENERGY    0.71209991
+
+ EXTRA SYMMETRY OF AOS IN SYMMETRY 1:   1 1 2 3 1 1 1 2 3 1
+
+ Eigenvalues of metric
+
+         1 0.969E-01 0.107E+00 0.398E+00 0.662E+00 0.662E+00 0.110E+01 0.134E+01 0.134E+01
+
+
+ Contracted 2-electron integrals neglected if value below      1.0D-11
+ AO integral compression algorithm  1   Integral accuracy      1.0D-11
+
+     0.262 MB (compressed) written to integral file ( 83.6%)
+
+
+ NUMBER OF SORTED TWO-ELECTRON INTEGRALS:       1540.     BUFFER LENGTH:  32768
+ NUMBER OF SEGMENTS:   1  SEGMENT LENGTH:       1540      RECORD LENGTH: 524288
+
+ Memory used in sort:       0.56 MW
+
+ SORT1 READ        2389. AND WROTE         512. INTEGRALS IN      1 RECORDS. CPU TIME:     0.01 SEC, REAL TIME:     0.09 SEC
+ SORT2 READ         512. AND WROTE        1540. INTEGRALS IN      1 RECORDS. CPU TIME:     0.00 SEC, REAL TIME:     0.00 SEC
+
+ FILE SIZES:   FILE 1:     2.8 MBYTE,  FILE 4:     4.2 MBYTE,   TOTAL:      7.0 MBYTE
+
+ OPERATOR DM      FOR CENTER  0  COORDINATES:    0.000000    0.000000    0.000000
+ Density functional group B3LYP=B88+DIRAC+LYP+VWN5
+ Functional: B88(Automatically generated B88)                                  Gradient terms: 1
+ Functional: DIRAC(Automatically generated DIRAC)                              Gradient terms: 0
+ Functional: LYP(Lee-Yang-Parr gradient-corrected correlation energy (1988))   Gradient terms: 1
+ Functional: VWN5(Automatically generated VWN5)                                Gradient terms: 0
+ Use grid at  1800.2
+
+
+ Exact exchange will be calculated, factor:  0.2000
+
+ Functional: B88                       Factor:  0.7200
+ Functional: DIRAC                     Factor:  0.0800
+ Functional: LYP                       Factor:  0.8100
+ Functional: VWN5                      Factor:  0.1900
+
+ Generated new metagrid on record  1800.2 with target accuracy 1.0D-06 and 4200 points in CPU time    0.0
+ Computed new grid on record 1800.1 in CPU time    0.0
+   11654 words reserved for DFT integration
+
+ PROGRAM * RKS-SCF (Restricted closed shell Kohn-Sham)     Authors: W. Meyer, H.-J. Werner, P.J. Knowles, 1993
+
+ NUMBER OF ELECTRONS:       1+    1-    SPACE SYMMETRY=1    SPIN SYMMETRY: Singlet 
+ CONVERGENCE THRESHOLDS:    1.00E-05 (Density)    1.00E-07 (Energy)
+ MAX. NUMBER OF ITERATIONS:       60
+ INTERPOLATION TYPE:            DIIS
+ INTERPOLATION STEPS:              2 (START)      1 (STEP)
+ LEVEL SHIFTS:                  0.00 (CLOSED)  0.00 (OPEN) 
+
+ Number of closed-shell orbitals:    1 (   1 )
+
+
+ Use fine grid record 1800.2 for energy threshold 1.0D-06
+ Molecular orbitals read from record     2100.2  Type=RKS/CANONICAL (state 1.1)
+
+ Molecular orbital dump at record        2100.2
+
+ ITERATION    DDIFF          GRAD             ENERGY        2-EL.EN.            DIPOLE MOMENTS         DIIS
+    1      0.000D+00      0.000D+00        -1.17177320      2.372529   -0.00000    0.00000    0.00000    0
+    2      0.000D+00      0.359D-06        -1.17177320      2.372530   -0.00000   -0.00000   -0.00000    0
+
+ Final occupancy:   1
+
+ !RKS STATE 1.1 Energy                 -1.171773197577
+ Nuclear energy                         0.71209991
+ One-electron energy                   -2.50216466
+ Two-electron energy                    1.18626490
+ SCF exchange energy                   -0.65903606     Factor=0.2000
+ Density functional                    -0.56797335     B88=-0.65757935 DIRAC=-0.56814846 LYP=-0.03831324 VWN5=-0.09489796
+ Virial quotient                       -1.02619268
+ !RKS STATE 1.1 Dipole moment          -0.00000000    -0.00000000    -0.00000000
+ Dipole moment /Debye                  -0.00000000    -0.00000000    -0.00000000
+
+ Orbital energies:
+
+         1.1          2.1          3.1
+     -0.428080     0.104002     0.580321
+
+
+ **********************************************************************************************************************************
+ DATASETS  * FILE   NREC   LENGTH (MB)   RECORD NAMES
+              1      20        2.68       500      610      700      900      950      970     1000      129      960     1100   
+                                          VAR    BASINP    GEOM    SYMINP    ZMAT    AOBASIS   BASIS     P2S    ABASIS      S 
+                                         1400     1410     1200     1210     1080     1600     1650     1300     1700     1800   
+                                           T        V       H0       H01     AOSYM     SMH    MOLCAS    ERIS     OPER     GRID   
+
+              2       8        0.47       700     1000     1800     2100      701     5300     5400     5450   
+                                         GEOM     BASIS    GRID      RKS     GEOM     HESS     FREQ     NMOD   
+
+ PROGRAMS   *        TOTAL       RKS      OPTG       RKS       INT
+ CPU TIMES  *         3.24      0.17      0.55      0.34      0.19
+ REAL TIME  *         4.92 SEC
+ DISK USED  *         7.93 MB      
+ **********************************************************************************************************************************

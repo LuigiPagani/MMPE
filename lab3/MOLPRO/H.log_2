@@ -1,0 +1,29 @@
+
+ Running default procedure: RKS-SCF000
+ Cartesian Coordinates are in [bohr]
+ Creating new Variables:
+ HX1               0.00000000
+ HY1               0.00000000
+ HZ1               0.00000000
+1PROGRAM * ALASKA (Gradient of the energy)     Author: R. Lindh
+
+ Orbitals from record         2100.2
+
+ Number of active orbitals:        1 (  1 )
+ Number of occupied orbitals:      1 (  1 )
+
+ Number of electrons=  1     Doublet     Space symmetry=1      Wavefunction type: OSCF            
+
+
+ DFT GRADIENT, EXFAC=     0.200
+
+ RKS GRADIENT FOR STATE 1.1
+
+ Atom          dE/dx               dE/dy               dE/dz
+
+   1        -0.000000000        -0.000000000        -0.000000000
+
+ Nuclear force contribution to virial =         0.000000000
+ Reading points  1 to  1 from record 701.2,  wavefunction type=RKS-SCF000      
+
+ Making model hessian for cartesian coordinates

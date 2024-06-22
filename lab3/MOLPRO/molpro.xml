@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<molpro xmlns="http://www.molpro.net/schema/molpro-output"
+  xmlns:xsd="http://www.w3.org/1999/XMLSchema"
+  xmlns:cml="http://www.xml-cml.org/schema"
+  xmlns:stm="http://www.xml-cml.org/schema"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+ <!--
+
+ Primary working directories    : /data/scratch
+ Secondary working directories  : /data/scratch
+ Wavefunction directory         : /home/ospite/wfu/
+ Main file repository           : /data/scratch/
+
+ ARCHNAME  : Linux/x86_64
+ FC        : /usr/bin/gfortran
+ FCVERSION : 4.8.5
+ BLASLIB   : 
+ id        : polimi
+
+ Nodes     nprocs
+ molmod       1
+
+ Using DEFAULT tuning parameter for ncache   :   16384
+ Using DEFAULT tuning parameter for mflopdgm :   10000
+ Using DEFAULT tuning parameter for mflopdgv :    4000
+ Using DEFAULT tuning parameter for mflopmxm :    5000
+ Using DEFAULT tuning parameter for mflopmxv :    4000
+ Using DEFAULT tuning parameter for mindgm   :       1
+ Using DEFAULT tuning parameter for mindgc   :       4
+ Using DEFAULT tuning parameter for mindgf   :    5000
+ Using DEFAULT tuning parameter for mindgl   :       4
+ Using DEFAULT tuning parameter for mindgr   :       1
+ Using DEFAULT tuning parameter for mindgv   :      20
+ Using DEFAULT tuning parameter for mincuda  :    1000
+ Using DEFAULT tuning parameter for mxmblk   :      64
+ Using DEFAULT tuning parameter for mxmbln   :      64
+ Using DEFAULT tuning parameter for nroll    :       2
+ Using default tuning parameters: mindgm=1; mindgv=20; mindgc=4; mindgr=1; noblas=0; mincuda=1000; minvec=7
+ default implementation of scratch files=df  
+
+ --><job>
+  <!--
+  --><error/><!--
+
+ ERROR EXIT
+ CURRENT STACK:
+ ? Error
+ ? Variable _STATUS not registered
+ ? The problem occurs in setvar
+
+
+ **********************************************************************************************************************************
+ ? Error
+ ? Variable _STATUS not registered
+ ? The problem occurs in setvar
+
+ VARIABLE ANGSTROM NOT FOUND
+   <error type="Error" location="setvar" message="Variable _STATUS not registered"/>
+  </error><!--
+
+ RECURSIVE CALL OF FEHLER. EMERGENCY STOP.
+ FILE INFORMATION MAY BE LOST
+
+ RECURSIVE CALL OF ERROR HANDLER, FILE INFORMATION MAY BE LOST
+
+ EMERGENCY STOP

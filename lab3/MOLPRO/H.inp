@@ -1,0 +1,12 @@
+memory, 50, m
+nosym
+
+geometry={angstrom
+H
+}
+
+basis=6-31+G(d,p)
+rks,b3lyp
+put,molden,molpro.molden
+
+

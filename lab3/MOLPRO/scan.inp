@@ -1,0 +1,20 @@
+memory, 400, m
+
+basis=6-31+G(d,p)
+
+geometry={H; H, H, r}
+
+i=0
+do r=0.5, 4.0, 0.15
+  geometry={H; H, H, r1}
+  r1=r
+  rks,b3lyp
+  {optg;
+   inactive,r1;}
+  values(i)=energy
+  i=i+1  
+enddo
+
+show, values
+
+
