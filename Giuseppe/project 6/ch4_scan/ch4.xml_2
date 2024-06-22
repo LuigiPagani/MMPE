@@ -1,0 +1,132 @@
+<?xml version="1.0"?>
+<molpro xmlns="http://www.molpro.net/schema/molpro-output"
+  xmlns:xsd="http://www.w3.org/1999/XMLSchema"
+  xmlns:cml="http://www.xml-cml.org/schema"
+  xmlns:stm="http://www.xml-cml.org/schema"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+ <!--
+
+ Primary working directories    : /data/scratch
+ Secondary working directories  : /data/scratch
+ Wavefunction directory         : /home/ospite/wfu/
+ Main file repository           : /data/scratch/
+
+ ARCHNAME  : Linux/x86_64
+ FC        : /usr/bin/gfortran
+ FCVERSION : 4.8.5
+ BLASLIB   : 
+ id        : polimi
+
+ Nodes     nprocs
+ molmod       1
+
+ Using default tuning parameters: mindgm=1; mindgv=20; mindgc=4; mindgr=1; noblas=0; mincuda=1000; minvec=7
+ default implementation of scratch files=df  
+
+ --><job>
+  <!--
+ memory, 50, m
+ nosym
+ 
+ distances_CH=[1.6,1.8,2.0,2.2,2.3,2.4,2.5,2.7,3.0,3.5,4.0,5.0,6.0,7.0]
+ 
+ basis=cc-pvdz
+ CASPT2
+ {casscf;closed,4;occ,6;wf,10,1,0;}
+ {rs2,shift=0.20}
+ {optg;inactive,d4}
+ 
+ do i=1,#distances_CH
+   r=distances_CH(i)
+   geometry={
+     angstrom
+     C  0.000000  0.000000  0.000000
+     H  0.000000  0.000000  r
+     H  1.089000  0.000000  0.000000
+     H -0.363000  1.029000  0.000000
+     H -0.363000 -1.029000  0.000000
+   }
+ 
+   {energy; wf,10,1,0;}
+   put,molden,molpro_&amp;i..molden
+ enddo
+ 
+
+ Variables initialized (661), CPU time= 0.00 sec
+ Commands  initialized (458), CPU time= 0.00 sec, 486 directives.
+ Default parameters read. Elapsed time= 0.00 sec
+
+ Checking input...
+
+ Unknown command or directive CASPT2
+
+ Unknown directive ENERGY for command OPTG
+
+ Unknown directive WF for command OPTG
+
+    3 input errors found
+
+ ? Error
+ ? Input errors!
+ ? The problem occurs in check_input
+  --><error type="Error" location="check_input" message="Input errors!"/><!--
+
+ ERROR EXIT
+ CURRENT STACK:      MAIN
+
+
+ **********************************************************************************************************************************
+ PROGRAMS   *        TOTAL
+ CPU TIMES  *         0.05
+ REAL TIME  *         0.10 SEC
+ DISK USED  *         0.00 MB      
+ **********************************************************************************************************************************
+  -->
+  <stm:metadataList>
+   <stm:metadata name="dc:date" content="2024-05-07T18:03:56+02:00"/>
+   <stm:metadata name="dc:creator" content="ospite"/>
+   <stm:metadata name="cmlm:insilico" content="Molpro"/>
+  </stm:metadataList>
+  <platform>
+   <licence id="polimi"/>
+   <parallel processes="1" nodes="1" all_processes="1" openmp="0"/>
+   <machine hostname="" architecture="">
+    
+    <sysinfo name="cpu MHz" content="2419.198"/>
+    <sysinfo name="MemTotal" content="7066832 kB"/>
+    <sysinfo name="vendor_id" content="GenuineIntel"/>
+    <sysinfo name="cpu family" content="6"/>
+    <sysinfo name="model name" content="13th Gen Intel(R) Core(TM) i9-13900HX"/>
+    <sysinfo name="flags"
+      content="fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx rdtscp lm constant_tsc rep_good nopl xtopology nonstop_tsc eagerfpu pni pclmulqdq ssse3 cx16 pcid sse4_1 sse4_2 movbe popcnt aes rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single rsb_ctxsw ibrs_enhanced fsgsbase bmi1 bmi2 invpcid rdseed clflushopt arat md_clear flush_l1d arch_capabilities"/>
+    <sysinfo name="MemTotal" content="7066832 kB"/>
+    <sysinfo name="cache size" content="36864 KB"/>
+    <sysinfo name="ncpu" content="8"/>
+   </machine>
+  </platform>
+  <input>
+   <p> memory, 50, m </p>
+   <p> nosym </p>
+   <p> distances_CH=[1.6,1.8,2.0,2.2,2.3,2.4,2.5,2.7,3.0,3.5,4.0,5.0,6.0,7.0] </p>
+   <p> basis=cc-pvdz </p>
+   <p> CASPT2 </p>
+   <p> {casscf;closed,4;occ,6;wf,10,1,0;} </p>
+   <p> {rs2,shift=0.20} </p>
+   <p> {optg;inactive,d4} </p>
+   <p> do i=1,#distances_CH </p>
+   <p>   r=distances_CH(i) </p>
+   <p>   geometry={ </p>
+   <p>     angstrom </p>
+   <p>     C  0.000000  0.000000  0.000000 </p>
+   <p>     H  0.000000  0.000000  r </p>
+   <p>     H  1.089000  0.000000  0.000000 </p>
+   <p>     H -0.363000  1.029000  0.000000 </p>
+   <p>     H -0.363000 -1.029000  0.000000 </p>
+   <p>   } </p>
+   <p>   {energy; wf,10,1,0;} </p>
+   <p>   put,molden,molpro_&amp;i..molden </p>
+   <p> enddo </p>
+  </input>
+  <!--
+ --></job><!--
+--></molpro>

@@ -1,0 +1,73 @@
+
+ Primary working directories    : /data/scratch
+ Secondary working directories  : /data/scratch
+ Wavefunction directory         : /home/ospite/wfu/
+ Main file repository           : /data/scratch/
+
+ ARCHNAME  : Linux/x86_64
+ FC        : /usr/bin/gfortran
+ FCVERSION : 4.8.5
+ BLASLIB   : 
+ id        : polimi
+
+ Nodes     nprocs
+ molmod       1
+
+ Using default tuning parameters: mindgm=1; mindgv=20; mindgc=4; mindgr=1; noblas=0; mincuda=1000; minvec=7
+ default implementation of scratch files=df  
+
+ memory, 50, m
+ nosym
+ 
+ distances_CH=[1.6,1.8,2.0,2.2,2.3,2.4,2.5,2.7,3.0,3.5,4.0,5.0,6.0,7.0]
+ 
+ basis=cc-pvdz
+ caspt2
+ {casscf;closed,4;occ,6;wf,10,1,0;}
+ {rs2,shift=0.20}
+ {optg;inactive,d4}
+ 
+ do i=1,#distances_CH
+   r=distances_CH(i)
+   geometry={
+     angstrom
+     C  0.000000  0.000000  0.000000
+     H  0.000000  0.000000  r
+     H  1.089000  0.000000  0.000000
+     H -0.363000  1.029000  0.000000
+     H -0.363000 -1.029000  0.000000
+   }
+ 
+   {energy; wf,10,1,0;}
+   put,molden,molpro_&amp;i..molden
+ enddo
+ 
+
+ Variables initialized (661), CPU time= 0.00 sec
+ Commands  initialized (458), CPU time= 0.00 sec, 486 directives.
+ Default parameters read. Elapsed time= 0.04 sec
+
+ Checking input...
+
+ Unknown command or directive CASPT2
+
+ Unknown directive ENERGY for command OPTG
+
+ Unknown directive WF for command OPTG
+
+    3 input errors found
+
+ ? Error
+ ? Input errors!
+ ? The problem occurs in check_input
+
+ ERROR EXIT
+ CURRENT STACK:      MAIN
+
+
+ **********************************************************************************************************************************
+ PROGRAMS   *        TOTAL
+ CPU TIMES  *         0.01
+ REAL TIME  *         0.10 SEC
+ DISK USED  *         0.00 MB      
+ **********************************************************************************************************************************
