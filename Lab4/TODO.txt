@@ -1,0 +1,3 @@
+-aggiungere formule
+-abbellire
+-verificare errore 44%
