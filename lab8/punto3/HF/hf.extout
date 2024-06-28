@@ -1,0 +1,49 @@
+ AIMExt (Version 19.10.12, Standard)
+ Portions Copyright (c) 1997-2019 by Todd A. Keith
+ AIMExt is a component of the AIMAll package ( http://aim.tkgristmill.com )
+
+ TP:  64-bit Windows
+
+ AIMExt is a heavily modified and extended version of the EXTREME program
+ developed by members of R.F.W. Bader's research group
+
+ Much of the Quantum Theory of Atoms in Molecules (QTAIM) is described in the book:
+   "Atoms in Molecules - A Quantum Theory"
+   R.F.W. Bader, Oxford University Press, Oxford, 1990
+
+ For additional references see:  http://aim.tkgristmill.com/references.html
+
+ Wfn File:  C:\SharedFolderMolecular\lab8\punto3\HF\hf.wfn
+ ExtOut File:  C:\SharedFolderMolecular\lab8\punto3\HF\hf.extout
+ Mgp File:  C:\SharedFolderMolecular\lab8\punto3\HF\hf.mgp
+
+ Wfn Title:   hydrogen fluoride                                                             
+ Job Title:  2D Grid of electron density:  Rho                                              
+
+ The nuclear coordinates:
+      H1            0.0000000000E+00  0.0000000000E+00 -1.5779542500E+00
+      F2            0.0000000000E+00  0.0000000000E+00  1.7532825000E-01
+
+ Number of primitives read from wavefunction =     39
+ Number of unique primitives to be used =     39
+
+ Using MO basis.
+
+ Number of processors used for this job =    1
+
+ Total memory allocated for AIMExt =       12.498 Megabytes
+ 
+Model:  Restricted SCF
+ 
+ Restricted, closed-shell, single-determinant wavefunction.
+   Number of electrons (from MO Occs)                   =          10.0000000000
+   Number of Alpha electrons (from MO Occs)             =           5.0000000000
+   Number of Beta electrons (from MO Occs)              =           5.0000000000
+   Number of electron pairs (N*(N-1)/2)                 =          45.0000000000
+   Number of electron pairs (from Muller 2EDM)          =          45.0000000000
+
+ Analyzing Rho, the electron density
+
+ Total memory allocated for AIMExt =       12.498 Megabytes
+
+ Total time = 0 sec (NProc = 1)                                                                                    

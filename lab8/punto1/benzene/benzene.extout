@@ -1,0 +1,59 @@
+ AIMExt (Version 19.10.12, Standard)
+ Portions Copyright (c) 1997-2019 by Todd A. Keith
+ AIMExt is a component of the AIMAll package ( http://aim.tkgristmill.com )
+
+ TP:  64-bit Windows
+
+ AIMExt is a heavily modified and extended version of the EXTREME program
+ developed by members of R.F.W. Bader's research group
+
+ Much of the Quantum Theory of Atoms in Molecules (QTAIM) is described in the book:
+   "Atoms in Molecules - A Quantum Theory"
+   R.F.W. Bader, Oxford University Press, Oxford, 1990
+
+ For additional references see:  http://aim.tkgristmill.com/references.html
+
+ Wfn File:  C:\SharedFolderMolecular\lab8\punto1\benzene\benzene.wfn
+ ExtOut File:  C:\SharedFolderMolecular\lab8\punto1\benzene\benzene.extout
+ Mgp File:  C:\SharedFolderMolecular\lab8\punto1\benzene\benzene.mgp
+
+ Wfn Title:   benzene                                                                       
+ Job Title:  2D Grid of electron density:  Rho                                              
+
+ The nuclear coordinates:
+      C1            2.2891569000E+00  1.3203039200E+00  0.0000000000E+00
+      C2            0.0000000000E+00  2.6421274600E+00  0.0000000000E+00
+      C3           -2.2881490500E+00  1.3222459100E+00  0.0000000000E+00
+      C4           -2.2887830800E+00 -1.3209644400E+00  0.0000000000E+00
+      C5           -1.1498300000E-03 -2.6421274900E+00  0.0000000000E+00
+      C6            2.2886933100E+00 -1.3212346500E+00  0.0000000000E+00
+      H7            2.4638700000E-03  4.6951763600E+00  0.0000000000E+00
+      H8           -4.0660078500E+00  2.3489717800E+00  0.0000000000E+00
+      H9           -4.0667906900E+00 -2.3474475700E+00  0.0000000000E+00
+      H10          -9.5850000000E-04 -4.6952025200E+00  0.0000000000E+00
+      H11           4.0653421200E+00 -2.3501034200E+00  0.0000000000E+00
+      H12           4.0673414700E+00  2.3465010800E+00  0.0000000000E+00
+
+ Number of primitives read from wavefunction =    234
+ Number of unique primitives to be used =    234
+
+ Using MO basis.
+
+ Number of processors used for this job =    1
+
+ Total memory allocated for AIMExt =       13.492 Megabytes
+ 
+Model:  Restricted SCF
+ 
+ Restricted, closed-shell, single-determinant wavefunction.
+   Number of electrons (from MO Occs)                   =          42.0000000000
+   Number of Alpha electrons (from MO Occs)             =          21.0000000000
+   Number of Beta electrons (from MO Occs)              =          21.0000000000
+   Number of electron pairs (N*(N-1)/2)                 =         861.0000000000
+   Number of electron pairs (from Muller 2EDM)          =         861.0000000000
+
+ Analyzing Rho, the electron density
+
+ Total memory allocated for AIMExt =       13.492 Megabytes
+
+ Total time = 0 sec (NProc = 1)                                                                                    
