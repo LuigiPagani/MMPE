@@ -1,0 +1,15 @@
+%chk=tmp
+%mem=100MB
+
+#p B3LYP/6-31+g(d,p) opt freq pop=full gfinput
+
+Nitrogen Dioxide
+
+0 2
+
+N
+O 1 d
+O 1 d 2 alpha
+
+d      =   1.60
+alpha  =   130.

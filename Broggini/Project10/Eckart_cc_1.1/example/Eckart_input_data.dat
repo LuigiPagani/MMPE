@@ -1,0 +1,10 @@
+Efor(kcal/mol)	8.0
+Eback(kcal/mol) 17.0
+ifreq(cm-1)	2000.
+temp_range(K)	100 2000 100
+Int_Step	0.001
+Npotvect(even)	10000
+Step(cm-1)	1
+Emin(cm-1)	0
+Emax(cm-1)	90000
+

@@ -1,0 +1,12 @@
+%chk=tmp
+%mem=100MB
+
+#p B3LYP/6-31+g(d,p) opt freq pop=full gfinput
+
+Carbon monoxide
+
+0 1
+C
+O 1 d
+
+d   =   2.20

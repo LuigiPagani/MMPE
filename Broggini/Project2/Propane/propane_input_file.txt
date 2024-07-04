@@ -1,0 +1,33 @@
+%chk=tmp
+%mem=100MB
+
+#p B3LYP/6-31+g(d,p) opt freq pop=full gfinput
+
+Propane
+
+0 1
+C1
+X                     1     1.
+C2                    1    rc       2    accx
+C3                    1    rc       2    accx     3     180.
+H4                    1    rh1      2    ahcx     3     90.
+H5                    1    rh1      2    ahcx     3    -90.
+H6                    3    rh2      1    ah2      2     0.
+H7                    4    rh2      1    ah2      2     0.
+H8                    3    rh3      1    ah3      7    dh3
+H9                    3    rh3      1    ah3      7    dh4
+H10                   4    rh3      1    ah3      8    dh3
+H11                   4    rh3      1    ah3      8    dh4
+
+rc       =             1.5482
+rh1      =             1.09
+rh2      =             1.09
+rh3      =             1.09
+accx     =           120.
+ahcx     =            55.
+ah2      =           111.
+ah3      =           111.
+dh3      =           120.
+dh4      =           -60.
+
+~ 

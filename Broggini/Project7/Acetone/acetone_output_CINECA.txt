@@ -1,0 +1,51 @@
+ SCF GIAO Magnetic shielding tensor (ppm):
+      1  C    Isotropic =    -6.7246   Anisotropy =   175.4503
+   XX=   -81.1794   YX=    -0.1173   ZX=    -0.0009
+   XY=    -0.1581   YY=   110.2422   ZY=    -0.0002
+   XZ=    -0.0002   YZ=    -0.0313   ZZ=   -49.2365
+   Eigenvalues:   -81.1795   -49.2365   110.2423
+      2  O    Isotropic =  -293.0191   Anisotropy =   911.8628
+   XX=  -367.2581   YX=    -0.3534   ZX=    -0.0055
+   XY=    -0.3700   YY=   314.8892   ZY=     0.3250
+   XZ=     0.0057   YZ=    -0.0918   ZZ=  -826.6883
+   Eigenvalues:  -826.6883  -367.2583   314.8895
+      3  C    Isotropic =   163.1261   Anisotropy =    53.0164
+   XX=   194.3415   YX=     0.0918   ZX=    -7.7796
+   XY=     0.0791   YY=   144.8064   ZY=     0.0933
+   XZ=   -20.4461   YZ=    -0.0285   ZZ=   150.2304
+   Eigenvalues:   144.8039   146.1040   198.4704
+      4  C    Isotropic =   163.1261   Anisotropy =    53.0165
+   XX=   194.3411   YX=     0.1898   ZX=     7.7805
+   XY=     0.1225   YY=   144.8052   ZY=    -0.0550
+   XZ=    20.4447   YZ=     0.1074   ZZ=   150.2319
+   Eigenvalues:   144.8044   146.1034   198.4704
+      5  H    Isotropic =    29.4945   Anisotropy =     4.3583
+   XX=    29.5966   YX=    -1.3786   ZX=     1.2386
+   XY=    -0.6789   YY=    30.0354   ZY=    -3.0375
+   XZ=    -0.7077   YZ=    -2.0598   ZZ=    28.8514
+   Eigenvalues:    26.7568    29.3266    32.4000
+      6  H    Isotropic =    29.4890   Anisotropy =     4.3245
+   XX=    29.6118   YX=     1.3505   ZX=     1.2477
+   XY=     0.6440   YY=    29.9587   ZY=     3.0583
+   XZ=    -0.7342   YZ=     2.0801   ZZ=    28.8965
+   Eigenvalues:    26.7357    29.3594    32.3720
+      7  H    Isotropic =    29.8147   Anisotropy =     6.5183
+   XX=    33.0649   YX=     0.0490   ZX=    -4.6248
+   XY=     0.0483   YY=    26.9994   ZY=    -0.0265
+   XZ=     0.0492   YZ=    -0.0052   ZZ=    29.3797
+   Eigenvalues:    26.9990    28.2848    34.1602
+      8  H    Isotropic =    29.4894   Anisotropy =     4.3305
+   XX=    29.6081   YX=     1.3573   ZX=    -1.2469
+   XY=     0.6523   YY=    29.9719   ZY=    -3.0523
+   XZ=     0.7263   YZ=    -2.0749   ZZ=    28.8882
+   Eigenvalues:    26.7411    29.3507    32.3764
+      9  H    Isotropic =    29.8147   Anisotropy =     6.5185
+   XX=    33.0654   YX=     0.0288   ZX=     4.6249
+   XY=     0.0297   YY=    26.9992   ZY=     0.0176
+   XZ=    -0.0493   YZ=     0.0033   ZZ=    29.3795
+   Eigenvalues:    26.9990    28.2846    34.1604
+     10  H    Isotropic =    29.4940   Anisotropy =     4.3521
+   XX=    29.6001   YX=    -1.3714   ZX=    -1.2393
+   XY=    -0.6702   YY=    30.0225   ZY=     3.0441
+   XZ=     0.7156   YZ=     2.0650   ZZ=    28.8593
+   Eigenvalues:    26.7512    29.3354    32.3954

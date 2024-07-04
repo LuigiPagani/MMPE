@@ -1,0 +1,12 @@
+ memory, 50, m
+ nosym
+
+ geometry={
+ H
+ }
+
+ basis=cc-pvdz
+ {df-rks,b3lyp}
+
+ put,molden,molpro.molden
+

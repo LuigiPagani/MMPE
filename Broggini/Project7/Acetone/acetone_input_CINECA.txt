@@ -1,0 +1,45 @@
+%chk=tmp 
+%mem=64Gb 
+%NprocShared=48
+
+#p B3LYP/6-31+g(d,p) opt(internal) nosym freq NMR=GIAO
+
+Acetone molecule
+
+0 1
+ c
+ o   1 oc2
+ c    1 cc3         2 cco3
+ c    1 cc4         2 cco4          3 dih4
+ h    4 hc5         1 hcc5          2 dih5
+ h    4 hc6         1 hcc6          5 dih6
+ h    4 hc7         1 hcc7          5 dih7
+ h    3 hc8         1 hcc8          2 dih8
+ h    3 hc9         1 hcc9          8 dih9
+ h    3 hc10        1 hcc10         8 dih10
+
+oc2         1.400000
+cc3         1.450000
+cco3        109.471
+cc4         1.450000
+cco4        109.471
+dih4        120.000
+hc5         1.089000
+hcc5        109.471
+dih5        180.000
+hc6         1.089000
+hcc6        109.471
+dih6        120.000
+hc7         1.089000
+hcc7        109.471
+dih7        240.000
+hc8         1.089000
+hcc8        109.471
+dih8        180.000
+hc9         1.089000
+hcc9        109.471
+dih9        120.000
+hc10        1.089000
+hcc10       109.471
+dih10       240.000
+
