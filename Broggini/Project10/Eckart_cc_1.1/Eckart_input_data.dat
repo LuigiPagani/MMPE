@@ -1,0 +1,9 @@
+Int_Step	0.002506987
+Npotvect(even)	2000
+Step(cm-1)	1
+Emin(cm-1)	0
+Emax(cm-1)	90000
+Efor(kcal/mol)	-1.55414E-22
+Eback(kcal/mol) 1.701759E-23
+ifreq(cm-1)	1162.2421
+temp_range(K)	100 2100 100

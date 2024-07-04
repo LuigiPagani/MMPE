@@ -1,0 +1,39 @@
+***
+Instructions for using the Eckart code (Daniela Polino and Carlo Cavallotti)
+The code computes energy resolved tunneling probabilities using the Eckart 
+analytical potential using both the analytical Eckart transmission coefficient and
+the imaginary action integral.The implemented equations are described 
+in Macromol. React. Eng. 2012, 6, 496–506 for the analytical Eckart model.
+
+***
+compilation and execution
+compile with 'make' in the main directlty
+execute with Eckart.exe
+
+***
+input file: Eckart_input_data.dat (see example subdirectory)
+- the required data is:
+Efor(kcal/mol)	the forward energy barrier
+Eback(kcal/mol) the backward energy barrier (Eback>Efor)
+ifreq(cm-1)	the imeginary frequency
+temp_range(K)	the temperature range (min and max) in which the tunneling partition is 
+		written and the step. For example: 100 2000 100
+there is then a series of parameters used for the calculation of the tunneling probability
+from the imaginary action integral. It is suggested to keep the defaults
+Int_Step	the integration step, used when computing the transimission coefficient 
+		using the imaginary action integral 
+Npotvect(even)	the dimension of the vector used to discretize the potential. If int_step is decreased
+		Npotvect must be increased until convergence.  
+Step(cm-1)	the integration step
+Emin(cm-1)	the minimum energy used for computing the transmission coefficient
+Emax(cm-1)	the maximum energy used for computing the transmission coefficient
+
+***
+Output Files (see example subdirectory)
+-results.out
+report the tunneling partition function as a function of T computed using both the imaginary action and 
+the Eckart the transmission coefficients.
+- Transmission_coeff.out
+reports transmission coefficients as a function of the energy (cm-1)
+
+
